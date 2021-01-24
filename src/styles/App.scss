@@ -1,0 +1,44 @@
+@import "./colors.scss";
+
+.flex {
+  display: flex;
+
+  &_between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  width: 90%;
+  max-width: 1000px;
+  min-width: 360px;
+  margin: 60px auto 20px auto;
+}
+
+.icon_align {
+  display: inline-flex;
+  vertical-align: text-bottom;
+}
+
+.medium-space {
+  margin: 15px;
+}
+
+
+@media (max-width: 760px) {
+  .main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    width: 98%;
+  }
+
+  .medium-space {
+    margin: 5px;
+  }
+}

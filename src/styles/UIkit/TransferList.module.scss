@@ -1,0 +1,19 @@
+@import "../colors.scss";
+
+.registration_button {
+  width: 300px;
+  margin: 5px auto;
+  &__clicked {
+    @extend .registration_button;
+    background-color: $clicked;
+  }
+}
+
+
+
+@media (max-width: 760px) {
+.transfer_container {
+  width: 50%;
+  margin: 15px auto;
+}
+}

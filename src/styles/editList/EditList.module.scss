@@ -1,0 +1,27 @@
+@import "../colors.scss";
+@import "../App.scss";
+
+.b_delete {
+  width: 280px;
+  text-align: center;
+  margin: 3px auto;
+  &__clicked {
+    @extend .b_delete;
+    background-color: $clicked;
+  }
+}
+
+.b_add {
+  height: 35px;
+  margin: 20px 0;
+  &__clicked {
+    @extend .b_add;
+    background-color: $clicked;
+  }
+}
+
+.input_center {
+  @extend .flex_between;
+  width: 350px;
+  margin: 0 auto;
+}

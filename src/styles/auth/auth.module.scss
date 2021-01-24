@@ -1,0 +1,26 @@
+@import "../colors.scss";
+
+.sign {
+    &_box {
+      padding: 5px;
+      margin-bottom: 30px;
+      width: 300px;
+      margin: 5px auto;
+    }
+      &_button {
+        width: 280px;
+        text-align: center;
+        margin: 3px auto;
+        &__clicked {
+          @extend .sign_button;
+          background-color: $clicked;
+        }
+      }
+  &_container {
+    width: 60%;
+    min-width: 350px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}

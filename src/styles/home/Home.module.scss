@@ -1,0 +1,36 @@
+@import "../colors.scss";
+@import "../App.scss";
+
+.table_container {
+  width: 60%;
+}
+
+.list_container {
+  width: 38%;
+}
+
+@media (max-width: 760px) {
+  .table_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .list_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    width: 98%;
+  }
+
+  .table_container {
+    width: 100%;
+  }
+
+  .medium_space {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,37 @@
+$clicked: #b9f6ca;
+
+.color {
+  &_box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    &__clicked {
+      @extend .color_box;
+      background-color: $clicked;
+    }
+  }
+  &_arm {
+    @extend .color_box;
+    background-color: #ff5252;
+  }
+  &_back {
+    @extend .color_box;
+    background-color: #ffa726;
+  }
+  &_chest {
+    @extend .color_box;
+    background-color: #00ff00;
+  }
+  &_reg {
+    @extend .color_box;
+    background-color: #64b5f6;
+  }
+  &_shoulder {
+    @extend .color_box;
+    background-color: #ce93d8;
+  }
+  &__clicked {
+    background-color: $clicked;
+  }
+}
